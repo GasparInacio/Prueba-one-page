@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Seccion Blog */
+#blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.blogMain {
+    width: 75%;
+    background-color: violet;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "card1 img1"
+        "img2 card2";
+}
+
+/* Carta 1 */
+.blogCard1 {
+    width: 100%;
+    grid-area: card1;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+}
+/* Título */
+.blogCard1>h2 {
+    width: 100%;
+    font-size: 3em;
+    padding: 1.5rem;
+}
+/* subtitulo */
+.blogCard1 p {
+
+    
+    padding: 3rem;
+    font-size: 1.5em;
+}
+/* Pie del blog */
+.blogFoot {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+/* Read more */
+.readMore {
+    margin: 0 0 0 3rem;
+}
+/* línea */
+.line1 {
+    border: 1px solid black;
+    width: 3rem;
+    margin-left: 3rem;
+}
+/* Imágen 1 */
+.blogImg1 {
+    grid-area: img1;
+    height: 30rem;
+}
+
+/* Imágen 2 */
+.blogImg2 {
+    grid-area: img2;
+    height: 30rem;
+}
+
+/* Carta 2 */
+.blogCard2 {
+    grid-area: card2;
+    height: 30rem;
+}
+
