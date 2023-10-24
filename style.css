@@ -8,74 +8,141 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-left: 100px;
 }
 
 .blogMain {
-    width: 75%;
-    background-color: violet;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-        "card1 img1"
-        "img2 card2";
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Carta 1 */
 .blogCard1 {
-    width: 100%;
-    grid-area: card1;
-    height: 30rem;
+    width: 50%;
+    height: 50%;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: aquamarine;
+    background-color: white;
 }
+
 /* Título */
 .blogCard1>h2 {
     width: 100%;
-    font-size: 3em;
-    padding: 1.5rem;
+    font-size: 50px;
+    margin: 0px 0 16px 0;
 }
+
 /* subtitulo */
 .blogCard1 p {
-
-    
-    padding: 3rem;
-    font-size: 1.5em;
+    color: gray;
+    padding: 0px;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 16px 0px 16px 0;
+    padding-right: 160px;
+    line-height: 35px;
 }
+
 /* Pie del blog */
 .blogFoot {
     text-align: center;
-    width: 100%;
     display: flex;
     align-items: center;
+    margin: 32px 0 0 0;
 }
+
 /* Read more */
 .readMore {
-    margin: 0 0 0 3rem;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 /* línea */
 .line1 {
     border: 1px solid black;
-    width: 3rem;
-    margin-left: 3rem;
+    width: 48px;
+    margin-left: 40px;
 }
+
 /* Imágen 1 */
 .blogImg1 {
-    grid-area: img1;
-    height: 30rem;
+    width: 50%;
+    height: 50%;
+    padding-top: 100px;
+}
+
+.img1 {
+    background-image: url(./img/img1.jpeg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 550px;
+    margin-left: -100px;
 }
 
 /* Imágen 2 */
 .blogImg2 {
-    grid-area: img2;
-    height: 30rem;
+    width: 50%;
+    height: 50%;
+}
+
+.img2 {
+    background-image: url(./img/img2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 480px;
+    width: 713px;
+    margin-top: -130px;
 }
 
 /* Carta 2 */
 .blogCard2 {
-    grid-area: card2;
-    height: 30rem;
+    width: 50%;
+    height: 50%;
 }
 
+.blogCard2>h2 {
+    width: 100%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 120px;
+    padding-left: 100px;
+    margin-bottom: 35px;
+}
+
+/* subtitulo */
+.blogCard2 p {
+    color: gray;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    padding-left: 100px;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.seeAll {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+}
+
+.blogFoot2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 32px 0 0 0;
+}
+
+.line2 {
+    border: 1px solid black;
+    width: 48px;
+    margin-left: 40px;
+}
